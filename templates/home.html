@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title> Predict AQI </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  </head>
+  <body>
+      <div class="container">
+        <div class="row my-5 pl-3">
+            <h1>Predict AQI</h1>
+        </div>
+        <!-- Starts form section -->
+        <div class="form-container ">
+            <form class="form-horizontal" action = "/predict/" method="post">
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="T">T:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="T" name="T">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="TM">TM:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="TM" name="TM">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="Tm">Tm:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="Tm" name="Tm">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="SLP">SLP:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="SLP" name="SLP">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="H">H:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="H" name="H">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="VV">VV:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="VV" name="VV">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="V">V:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="V" name="V">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="VM">VM:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="VM" name="VM">
+                  </div>
+                </div>
+                <div class="form-group row"> 
+                <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                  <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                  </div>
+                </div>
+              </form>
+            <!-- Ends form section -->
+        </div>
+    </div>
+  </body>
+</html>
